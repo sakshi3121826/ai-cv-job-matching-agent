@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI CV Job Matching Agent</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<h1 class="title">🤖 AI CV Job Matching Agent</h1>
+
+<!-- LOGIN / REGISTER -->
+<div class="auth-box" id="authBox">
+  <h2 id="authTitle">Login</h2>
+
+  <input type="email" placeholder="Email" id="email">
+  <input type="password" placeholder="Password" id="password">
+
+  <button onclick="login()">Login</button>
+
+  <p class="switch">
+    Don't have an account?
+    <span onclick="showRegister()">Register</span>
+  </p>
+</div>
+
+<!-- MAIN APP -->
+<div class="app hidden" id="app">
+
+  <!-- Upload CV -->
+  <div class="upload-box">
+    <label>📄 Upload Your CV</label>
+    <input type="file">
+  </div>
+
+  <!-- Chat Window -->
+  <div class="chat-box">
+    <div id="messages"></div>
+
+    <div class="input-area">
+      <input type="text" id="userInput" placeholder="Ask about jobs...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
